@@ -1,0 +1,24 @@
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfplan
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# Helm output
+*.tgz
+
+# System files
+.DS_Store
+.vscode/
+
+# AWS credentials (если случайно попали)
+.aws/
+
+# Kubernetes secrets
+modules/jenkins/aws_credentials_secret.tf

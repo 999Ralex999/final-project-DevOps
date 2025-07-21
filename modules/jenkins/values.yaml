@@ -1,0 +1,27 @@
+controller:
+  admin:
+    username: admin
+    password: admin123
+
+  serviceType: LoadBalancer
+
+  installPlugins:
+    - kubernetes:latest
+    - git:latest
+    - workflow-aggregator:latest
+
+  runAsUser: 0
+  fsGroup: 0
+
+  persistence:
+    enabled: false
+
+  additionalVolumes:
+    - name: jenkins-home
+      emptyDir: {}
+
+  additionalVolumeMounts:
+    - name: jenkins-home
+      mountPath: /var/jenkins_home
+
+

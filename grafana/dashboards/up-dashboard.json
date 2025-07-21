@@ -1,0 +1,30 @@
+{
+  "id": null,
+  "uid": "up-dashboard",
+  "title": "UP Targets Dashboard",
+  "tags": ["auto-generated"],
+  "timezone": "browser",
+  "schemaVersion": 16,
+  "version": 1,
+  "refresh": "5s",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "UP Status",
+      "targets": [
+        {
+          "expr": "up",
+          "legendFormat": "{{instance}}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Prometheus",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 9
+      }
+    }
+  ]
+}
